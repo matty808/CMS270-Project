@@ -1,0 +1,55 @@
+
+public class Sole extends Component {
+
+	//----------------------------Data Members----------------------------	
+	
+	private String color;
+	private double size;
+	private String pattern;
+	
+	//----------------------------Constructors----------------------------
+	
+	public Sole() {
+		super();
+	}
+	public Sole(String clr, double sz, String pttrn) {
+		super();
+		this.color = clr;
+		this.size = sz;
+		this.pattern = pttrn;
+	}
+	
+	
+	//----------------------------Getters and Setters----------------------------
+	
+	public String getColor() {
+		return color;
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	public double getSize() {
+		return size;
+	}
+	public void setSize(double size) {
+		this.size = size;
+	}
+	public String getPattern() {
+		return pattern;
+	}
+	public void setPattern(String pattern) {
+		this.pattern = pattern;
+	}
+	
+	//----------------------------Behavior----------------------------
+	public String toString() {
+		return super.toString() + 
+		          "\nColor " + color +
+			 "\nSize: " + size +
+		   "\nPattern: " + pattern;
+	}
+	
+	
+	
+
+}
