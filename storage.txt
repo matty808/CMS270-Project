@@ -1,9 +1,9 @@
-L 50 R 12
-L 50 G 12
-L 50 B 12
-S 50 R 12 Hermes
-S 50 G 12 Hermes
-S 50 B 12 Gucchi
-B 50 R 12 Hermes Leather
-B 50 G 12 Gucchi Cotton
-B 50 B 12 Gucchi Polyester
+L 1 red 12
+L 1 green 12
+L 0 blue 12
+S 1 red 12 Hermes
+S 0 green 12 Hermes
+S 1 blue 12 Gucchi
+B 1 red 12 Hermes Leather
+B 1 green 12 Gucchi Cotton
+B 1 blue 12 Gucchi Polyester
