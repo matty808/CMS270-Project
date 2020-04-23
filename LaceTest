@@ -1,0 +1,49 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class LaceTest {
+
+	//Test if toString works
+		
+		@Test
+		public void testToString(){ 
+			Lace lace = new Lace();
+			lace.setColor("Blue");
+			lace.setLength(10.00);
+	        String expected = "Color: Blue Length: 10.00";
+	        assertEquals(expected, lace.toString());
+	    }
+		
+		
+		
+	//Test if Equals works with same objects
+		
+		@Test
+		public void testEquals(){ 
+			Lace lace1 = new Lace();
+			lace1.setColor("Blue");
+			lace1.setLength(10.00);
+			Lace lace2 = new Lace();
+			lace2.setColor("Blue");
+			lace2.setLength(10.00);
+			assertTrue(lace1.equals(lace2));
+			    
+		}
+
+	//Test if Equals works with different objects
+		
+		@Test
+		public void testEquals2(){ 
+			Lace lace1 = new Lace();
+			lace1.setColor("Blue");
+			lace1.setLength(10.00);
+			Lace lace2 = new Lace();
+			lace2.setColor("Red");
+			lace2.setLength(10.00);
+			assertTrue(lace1 != lace2);
+			    
+		}
+		
+
+}
