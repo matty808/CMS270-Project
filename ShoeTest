@@ -1,0 +1,42 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class ShoeTest {
+
+	//Test if toString works
+	
+			@Test
+			public void testToString(){ 
+				//Make shoe to test
+				Shoe shoe = new Shoe();
+				
+				//Make a all components for the shoe
+				Lace lace = new Lace();
+				lace.setColor("Blue");
+				lace.setLength(10.00);
+			
+				
+				Sole sole = new Sole();
+				sole.setColor("Blue");
+				sole.setSize(10.00);
+				sole.setPattern("Gucci");
+				
+				Body body = new Body();
+				body.setColor("Blue");
+				body.setMaterial("Gucci Leather");
+				body.setPattern("Gucci");
+				body.setSize(10.00);
+				
+				shoe.setLaces(lace);
+				shoe.setSole(sole);
+				shoe.setBody(body);
+				
+				
+		        String expected = "Laces: Color: Blue Length: 10.00" + 
+						"\nBody: Color: Blue Size: 10.00 Pattern: Gucci Material: Gucci Leather" + 
+						"\nSole: " + "Color Blue Size: 10.00 Pattern: Gucci";
+		        assertEquals(expected, shoe.toString());
+		    }
+
+}
